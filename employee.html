@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px 20px;
+    }
+    th{
+        background-color: aqua;
+    }
+    #preloader{
+        background: white url(images/Screenshot_20221216_055102.png) no-repeat center center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        background-size: 20%;
+        
+    }
+    #contener{
+        display: none;
+    }
+</style>
+<body onload="myFunction()">
+    <div id="preloader"></div>
+    <div id="contener"></div>
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="resources/javascript/ExternalAPICall.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        var contener = document.getElementById("contener");
+        function myFunction(){
+            // loader.style="background-color: white ;";
+            loader.style=" background-image: url(Screenshot_20221216_093256.png);";
+            loader.style=" z-index: -100 ;";
+            // contener.style="z-index: 1000;";
+            // document.write("sandip")
+        }
+    </script>
+</body>
+    
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #preloader{
+            /* background-color: black; */
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            border: 1px solid black;
+            background: rgb(255, 255, 255) url(12.gif) no-repeat center center; 
+            background-size: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader"></div>
+</body>
+<script>
+    var loader = document.getElementById("preloader") ;
+    window.addEventListener("load",function(){
+        loader.style.disply="none";
+    });
+</script>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    #navbar{
+        background-color: black;
+        color: white;
+        min-height: 50px;
+    }
+    #toggle-button{
+        display: none;
+    }
+    ul{        
+        padding: 10px 0;
+        position: relative;
+    }
+    ul li{
+            list-style:none;
+            display: inline;
+            margin:  30px;
+            
+    }
+    span span{
+        margin: 0 5px;
+    }
+
+
+    @media (max-width:700px) {
+        ul li{
+            display: none;
+        }
+        
+        #toggle-button{
+        display: inline;
+        position:absolute;
+        right: 0;
+        top: 37%;
+
+    }
+    }
+    </style>
+
+</head>
+<body>
+    <section id="navbar">
+        <ul>
+            <span>
+                <span id="company-name">Logo</span>
+                <span id="company-name">Company Name</span>
+            </span>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li id="toggle-button">X</li>
+        </ul>
+    </section>
+</body>
+</html>

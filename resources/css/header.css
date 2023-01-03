@@ -1,0 +1,333 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar {
+    /* background-color: rgba(0, 0, 0, 0.644); */
+    color: white;
+    min-height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* font-weight: bold; */
+}
+
+.nav-btn {
+
+    margin: -4.5px 0 -4.5px 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+
+.navbar-list {
+    background-color: rgba(0, 0, 0, 0.644);
+
+    width: 100%;
+}
+
+.nav-items {
+    padding: 0;
+
+}
+
+.nav-items li {
+    list-style: none;
+    display: inline;
+}
+
+span {
+    margin: -100px 0;
+}
+
+.nav-items li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    transition: all 1s;
+    border: 1px solid transparent;
+}
+
+.nav-items li a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#comname {
+    display: none;
+}
+
+
+/* SinIn and LogIn Button CSS File  */
+
+/* SignIn Button CSS */
+.signin-btn {
+    display: flex;
+    position: absolute;
+    top: 13px;
+    right: 270px;
+
+}
+
+.signin-btn button {
+    background-color: transparent;
+    border: 1.5px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+
+}
+
+.signin-btn button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+
+/* LogIn Button CSS */
+.login-btn {
+    display: flex;
+    position: absolute;
+    top: 13px;
+    right: 333px;
+
+}
+
+.login-btn button {
+    background-color: transparent;
+    border: 1.5px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+
+}
+
+.login-btn button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* Navbar Menu CSS File */
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+}
+
+.nav-btn:hover {
+    background-color: rgb(162, 162, 162);
+    transition: all 1s;
+
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+
+/* Search Box CSS File  */
+
+.container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; */
+    position: absolute;
+    right: 13px;
+    top: 5px;
+
+}
+
+form {
+    color: black;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit {
+    border: 1px solid #555;
+    width: 100%;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+
+
+
+@media (max-width:963px) {
+
+    .nav-items li:nth-child(8) {
+        display: none;
+    }
+}
+
+@media (max-width:885px) {
+
+    .nav-items li:nth-child(7) {
+        display: none;
+    }
+}
+
+@media (max-width:797px) {
+
+    .nav-items li:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width:709px) {
+
+    .nav-items li:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width:608px) {
+
+    .nav-items li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width:570px) {
+
+    .nav-items li:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width:526px) {
+
+    /* .nav-items li {
+        display: none;
+    } */
+    
+    .container {
+        display: none;
+    }
+
+    .signin-btn {
+        right: 10px;
+    }
+
+    .login-btn {
+         right:72px;
+    }
+    #comname{
+        display: inline-block;
+        
+        color: rgb(255, 255, 255);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 10px;
+        font-size: larger;
+    }
+    #comname span{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width:262px) {
+    .signin-btn,.login-btn{
+        display: none;
+    }
+    #comname{
+        position: absolute;
+        top: 10px;
+        right: 34%;
+        /* left: 10%; */
+    }
+}
